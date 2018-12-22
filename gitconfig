@@ -1,0 +1,18 @@
+[user]
+	name = Pratyush Anand
+	email = pratyush.anand@gmail.com
+[core]
+	autocrlf = input
+	abbrev = 12
+	editor = "vim -c 'setlocal spell'"
+	fileMode = false
+	whitespace = blank-at-eol,blank-at-eof,trailing-space,space-before-tab
+[sendemail]
+	smtpserver = /usr/bin/msmtp
+	smtpserverport = 587
+	smtpuser = pratyush.anand@gmail.com
+	smtpencryption = tls
+[color]
+	diff = auto
+	status = auto
+	branch = auto

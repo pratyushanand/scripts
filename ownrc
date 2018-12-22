@@ -1,0 +1,65 @@
+ # enable autocomplete in gnuplot
+alias gnuplot="rlwrap -a -c -b\"\\\"\\\"\\\'\\\'\" gnuplot"
+alias gb='git branch'
+alias gbm='gb -D master; gb master'
+alias gar='git am --resolved'
+alias ga3='git am -3'
+alias ga='git add'
+alias gaa='git add -A'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gds='git diff --stat'
+alias gdss='git diff --shortstat'
+alias gc='git cherry-pick'
+alias gl='git log '
+alias glo='git log --pretty=oneline --abbrev-commit'
+alias gls='gl --stat'
+alias glsp='gl --stat -p'
+alias gs='git status'
+alias gsh='git show --stat -p'
+alias gca='git commit --amend'
+alias tgca='GIT_EDITOR=cat gca'
+alias gcah='gca -C HEAD'
+alias gcara='gcah --reset-author'
+alias gcdc='git commit --date="`date`" -c '
+alias gcs='git commit -s'
+alias gco='git checkout'
+alias gr='git rebase -i'
+alias gro='git rebase -i origin/next'
+alias grhm='git reset --hard origin/master'
+alias grh='git reset --hard'
+alias grhh1='git reset --hard HEAD~1'
+alias grs='git rebase --skip'
+alias grc='git rebase --continue'
+alias tgrc='GIT_EDITOR=cat grc'
+alias grv='git remote -v'
+alias gf='git fetch -p'
+alias gfo='gf -p origin'
+alias gfs='gf -p self'
+alias gps='git push self --mirror'
+alias ggrep='git grep --color -ni'
+alias rgrep='repo grep -ni'
+alias gbl='git blame'
+alias gk='gitk --all -100&'
+alias cpatch='./scripts/checkpatch.pl'
+alias cpatcha='./scripts/checkpatch.pl *.patch'
+alias fpatch='git format-patch -C -M --thread=shallow'
+alias fpatchc='fpatch --cover-letter'
+alias ph='fpatch HEAD^'
+alias mail='git send-email *.patch'
+alias armmail='git send-email --to=linux-arm-kernel@lists.infradead.org $cclist'
+alias usbxhcimail='git send-email --to=linux-usb@vger.kernel.org --to=mathias.nyman@linux.intel.com'
+alias usbgadgetmail='git send-email --to=linux-usb@vger.kernel.org --to=balbi@ti.com'
+alias usbcoremail='git send-email --to=linux-usb@vger.kernel.org --to=stern@rowland.harvard.edu'
+alias internalmail='git send-email --suppress-cc=all'
+alias mc="make clean"
+alias m="make"
+alias mcm="make clean\;make"
+alias def13xx="make O=../b13xx ARCH=arm CROSS_COMPILE=armv7-linux- spear13xx_defconfig"
+alias mc13xx="make O=../b13xx ARCH=arm CROSS_COMPILE=armv7-linux- menuconfig"
+alias u13xx="make O=../b13xx ARCH=arm CROSS_COMPILE=armv7-linux- UIMAGE_LOADADDR=0x8000 uImage"
+alias dt1310="make O=../b13xx ARCH=arm CROSS_COMPILE=armv7-linux- spear1310-evb.dtb"
+alias dt1340="make O=../b13xx ARCH=arm CROSS_COMPILE=armv7-linux- spear1340-evb.dtb"
+alias grep="grep -rn --color"
+
+
